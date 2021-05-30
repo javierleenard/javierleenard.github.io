@@ -1,0 +1,262 @@
+  	@keyframes drop {
+		0% {
+			opacity: 0;
+			transform: translateY(-80px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+
+	.drop {
+        animation: drop 1.5s ease;
+    }
+
+  	* {
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+
+    .rainbow-text {
+		user-select: none;
+		color: white;
+		background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+					rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+		background-size: 600vw 600vw;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		animation: slide 10s linear infinite forwards;
+		font-family: 'Press Start 2P', cursive;
+		letter-spacing: 5px;
+		margin-left: 30px;		
+    }
+
+	@keyframes slide {
+		0% {
+			background-position-x: 0%;
+		}
+
+		100% {
+			background-position-x: 600vw;
+			}
+		}
+
+	.box-1 {
+		display: flex;
+		justify-content: space-between;
+		margin-top: -10px;
+	}
+
+	.box-2 {
+		margin-top: 20px;
+	}
+
+	.logo {
+		width: 55px;
+		height: 55px;
+		margin-top: 20px;
+		margin-left: -15px;
+		border-radius: 50%;
+		box-shadow: 3px 6px 9px 2px #880808;
+	}
+
+	li {
+		display: inline;
+	}
+
+	li a {
+		font-size: 25px;
+		margin-right: 40px;
+		text-decoration: none;
+		color: white;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: bold;
+	}
+
+	li a.active {
+		color: white;
+	}
+
+	li a:hover {
+		background-color: #555;
+		color: white;
+	}
+
+	body {
+		background-color: black;
+	}
+
+	.footer {
+		color:#928E85;
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.dropbtn {
+		background-color: transparent;
+		color: white;
+		border: transparent;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		font-size: 25px;
+		margin-right: 40px;
+	}
+
+	.dropdown {
+	    position: relative;
+	    display: inline-block;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f1f1f1;
+	    width: 150px;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    color: black;
+	    padding: 5px 10px;
+	    text-decoration: none;
+	    display: block;
+	    font-size: 16px;
+	}
+
+	.dropdown-content a:hover {
+	    background-color: #880808;
+	    width: 150px;
+	}
+
+	.dropdown:hover .dropdown-content {
+	    display: block;
+	}
+
+	.dropbtn:hover {
+	    background-color: #555;
+	    color: white;
+	}
+
+	button:focus {
+		outline:none;
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	textarea:focus {
+		outline:none;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	table {
+		font-family: 'Open Sans', sans-serif;
+		color: #000;
+		width: 90%;
+		margin: auto;
+		padding: 25px;
+	}
+
+	textarea {
+		width: 100%;
+		resize: none;
+		font-size: 16px;
+		font-family: inherit;
+		height: 100px;
+		padding: 5px 5px 5px 5px; 
+	}
+
+	input[type=text], input[type=email] {
+		width: 100%;
+		font-family: inherit;
+		padding: 5px 5px 5px 5px; 
+	}
+
+	option[value=""][disabled] {
+		display: none;
+		font-family: inherit;
+		outline: none;
+	}
+
+	select:focus {
+		outline: none;
+	}
+
+	td {
+		padding: 4px;
+	}
+
+	#choices {
+		width: 100%;
+		font-family: inherit;
+		padding: 5px;
+	}
+
+	.greet {
+		color: #FFF;
+		font-family: 'Open sans', sans-serif;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.greetings {
+		margin: 0px 0px 20px;
+	}
+
+	.lblhelp {
+		text-align: left;
+	}
+
+	.form {
+		background-color: #F5F5F5;
+		padding: 25px;
+		border: 2px solid #222;
+		width: 30%;
+		margin: 25px auto 25px;
+		border-radius: 10px;
+	}
+
+	.mainhead {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contact {
+		text-align: center;
+		font-size: 86px;	
+		color: #ff77ff;
+		font-family: 'Krona One', sans-serif;
+		text-shadow: 1px 1px 1px;
+		margin-top: -25	px;
+	}
+
+	::placeholder {
+		padding: 5px;
+	}
+
+	.share {
+		font-size: 14px;
+	}
+
+	#btn1 {
+		font-family: 'Krona One', sans-serif;
+		font-weight: 800;
+		font-size: 20px;
+		color: white;
+		background-color: #0257D8;
+		padding: 10px;
+		width: 100%
+	}
+
+	#btn1:hover {
+		background-color: #014682;
+	}
