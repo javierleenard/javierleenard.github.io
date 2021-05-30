@@ -1,0 +1,183 @@
+    /* NAVIGATION BAR */
+    .rainbow-text {
+        user-select: none;
+        color: white;
+        background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
+                    rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+        background-size: 600vw 600vw;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: slide 10s linear infinite forwards;
+        font-family: 'Press Start 2P', cursive;
+        letter-spacing: 5px;
+        margin-left: 30px;
+    }
+
+    @keyframes slide {
+        0% {
+            background-position-x: 0%;
+        }
+
+        100% {
+            background-position-x: 600vw;
+            }
+        }
+
+    @keyframes drop {
+        0% {
+            opacity: 0;
+            transform: translateY(-80px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    
+    .drop {
+        animation: drop 1.5s ease;
+        overflow-y: scroll; /* Add the ability to scroll */
+    }
+
+    .logo {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        margin-top: -11px;
+        margin-left: 15px;
+        border-radius: 50%;
+        box-shadow: 3px 6px 9px 2px #880808;
+    }
+
+    .navbar {
+        margin-right: -10px;
+        margin-top: -60px;
+    }
+
+    li {
+        display: inline;
+    }
+
+    li a {
+        font-size: 25px;
+        margin-right: 40px;
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    li a.active {
+        color: white;
+    }
+
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .footer {
+        color:#928E85;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        color: white;
+        border: transparent;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        margin-right: 40px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 5px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #880808;
+        width: 130px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbtn:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    /* CONTENT */
+    .header {
+        font-family: 'Krona One', sans-serif;
+        font-size: 72px;
+        text-align: center;
+        text-shadow: 1px 1px 1px;
+        color: #ff77ff;
+    }
+
+    .text {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        padding: 5px 10px;
+        text-align: justify
+    }
+
+    .big-border {
+        width:700px;
+        height: 250px;
+        border-style: solid;
+        border-color:#ff6e40;
+        margin: auto;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .gif {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: auto;
+        border-style: solid;
+        border-color: #6A0DAD;
+    }
+
+    /* HIDE SCROLLBAR */
+
+    .drop::-webkit-scrollbar {
+        display: none;
+    }
+
+    .drop {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
